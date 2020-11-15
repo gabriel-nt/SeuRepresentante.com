@@ -1,0 +1,24 @@
+.underline {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 30px;
+    left: 33px;
+    height: 5px;
+    width: 30.5%;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    transition: transform 0.5s ease-in-out;
+    background: #a8cf45;
+    border-radius: .25em;
+    mix-blend-mode: initial;
+}
+
+.menu-item {
+    font-family: 'Open Sans';
+    color: #343a40;
+    &:hover {
+        color: #343a40;
+        text-decoration: none;
+    }
+}

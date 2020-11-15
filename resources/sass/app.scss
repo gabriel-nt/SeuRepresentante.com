@@ -1,0 +1,47 @@
+// Fonts
+@font-face {
+    font-family: 'Azonix';
+    src: url('./../fonts/Azonix.otf');
+}
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('./../fonts/league-gothic/LeagueGothic-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./../fonts/source-sans/SourceSansPro-Regular.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Bootstrap
+@import 'bootstrap';
+@import 'swiper';
+// Variables
+@import 'mixin';
+@import 'input-login';
+@import 'input-form';
+@import 'layout';
+@import 'carousel';
+@import 'modal';
+@import 'cropper';
+@import 'image-input';
+@import 'input-check';
+@import 'card';
+@import 'scroll-bar';
+@import 'form-search';
+@import 'loader';
+@import 'panel';
+@import 'buttons';
+@import 'float-btn';
+@import 'range';
+@import 'card-product';
+@import 'form-contact';
+@import 'collapse';
+@import 'cart';
+@import 'input-number';
+@import 'view-product';
+@import 'alerts';
+@import 'sem-resultados';

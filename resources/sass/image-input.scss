@@ -1,0 +1,116 @@
+.ip-img {
+    // Container
+    .ip-img-ct {
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        padding: 8px;
+        width: 100%;
+        margin-bottom: 5px;
+        >.row {
+            margin: 0px;
+        }
+    }
+    >input {
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    // Drop
+    .ip-img-dp {
+        border: 1px dashed #aaa;
+        border-radius: 4px;
+        text-align: center;
+        vertical-align: middle;
+        margin: 12px 15px 12px 12px;
+        padding: 5px;
+        >.row {
+            margin: 0px;
+            .ul {
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+    // Titulo do drop
+    .ip-img-tt {
+        color: #aaa;
+        font-size: 1.6em;
+        padding: 85px 10px;
+        cursor: default;
+    }
+    // Container da Thumbnail
+    .ip-img-tb-ct {
+        float: left;
+        display: block;
+        position: relative;
+        margin: 15px;
+        // Hover da thumbnail
+        &:hover {
+            >.ip-img-cp {
+                display: block;
+            }
+            >.ip-img-dl {
+                display: block;
+            }
+        }
+    }
+    // Captions de delete
+    .ip-img-cp {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        display: none;
+        .tx-l {
+            text-align: left;
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+    }
+    // Captions de cropper
+    .ip-img-dl {
+        position: absolute;
+        width: 100%;
+        display: none;
+        top: 0;
+        .tx-r {
+            text-align: right;
+            margin-right: -7px;
+            margin-top: -8px;
+        }
+    }
+    // Icones
+    .ip-img-ic {
+        cursor: pointer;
+        border-radius: 50%;
+        font-weight: bold;
+        padding: 10px;
+        font-size: 15px;
+        &.fa-times {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        &.fa-crop {
+            background-color: white
+        }
+    }
+}
+
+.header-img {
+    position: absolute;
+    left: 47%;
+}
+
+// .is-invalid {
+//     .ip-img-ct {
+//         border: 1px solid red;
+//     }
+//     .ip-img-dp {
+//         border: 1px dashed red;
+//     }
+//     .ip-img-tt {
+//         color: red;
+//     }
+// }

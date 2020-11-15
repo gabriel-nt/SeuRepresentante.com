@@ -1,0 +1,67 @@
+.btn-if {
+    background-color: #33b5e5!important;
+    color: #fff !important;
+    &:hover {
+        background-color: #56c8f1!important;
+        color: #fff;
+    }
+}
+
+.btn-rounded {
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 10em;
+}
+
+.btn-sc {
+    background-color: #00c851!important;
+    color: #fff !important;
+    &:hover {
+        background-color: #36d877 !important;
+        color: white !important;
+    }
+}
+
+.btn-wg {
+    background-color: #fb3!important;
+    color: #fff !important;
+    &:hover {
+        background-color: rgb(245, 195, 96) !important;
+        color: white !important;
+    }
+}
+
+.btn-dg {
+    background-color: #ff3547!important;
+    color: #fff !important;
+    &:hover {
+        background-color: #eb404e !important;
+        color: white !important;
+    }
+}
+
+.btn-pr {
+    background-color: #4285f4!important;
+    color: #fff !important;
+    &:hover {
+        background-color: #6294e4!important;
+        color: white !important;
+    }
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.icon-delete {
+    background-color: transparent !important;
+    border: none !important;
+}

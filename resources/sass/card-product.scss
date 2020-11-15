@@ -1,0 +1,147 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+.card-product {
+    font-family: 'Raleway';
+    max-width: 800px;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    transition: all 0.3s;
+    >nav {
+        width: 100%;
+        color: #727272;
+        text-transform: uppercase;
+        padding: 13px 17px;
+        border-bottom: 2px solid #efefef;
+        font-size: 12px;
+        & i {
+            font-size: 20px;
+            text-align: right;
+            margin-top: 7px;
+        }
+        & span {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+}
+
+.card-product:hover {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.photo {
+    padding: 30px;
+    text-align: center;
+}
+
+.photo img {
+    max-height: 240px;
+}
+
+.description {
+    padding: 30px;
+    border-left: 2px solid #efefef;
+}
+
+.description h1 {
+    color: #515151;
+    font-weight: 300;
+    padding-top: 15px;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.description h2 {
+    color: #515151;
+    margin: 0;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.description h4 {
+    margin: 0;
+    color: #727272;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px
+}
+
+.description p {
+    font-size: 12px;
+    line-height: 20px;
+    color: #727272;
+    padding: 20px 0;
+    padding-top: 0;
+    margin: 0;
+}
+
+.estoque {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #727272;
+}
+
+.description button {
+    outline: 0;
+    font-size: 14px;
+    border: 0;
+    background: none;
+    border: 1px solid #d9d9d9;
+    padding: 8px 0px;
+    margin-bottom: 30px;
+    color: #515151;
+    text-transform: uppercase;
+    font-family: inherit;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+
+.description button:hover {
+    border: 1px solid #73c300;
+    color: #73c300;
+    cursor: pointer;
+}
+
+.product-price {
+    font-family: Arial;
+    background: #73c300;
+    padding: 7px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 21px;
+    font-weight: 200;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+
+.photo-ct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-rating {
+    padding: 5px 0 !important;
+    font-size: 12px;
+    color: #000 !important;
+}
+
+@media (min-width: 220px) and (max-width: 480px) {
+    .photo-ct {
+        max-width: 100%;
+        flex: 0 0 100%;
+        border: none;
+    }
+    .description-ct {
+        max-width: 100%;
+        flex: 0 0 100%;
+        border: none;
+    }
+    .description {
+        border-left: 0;
+    }
+}

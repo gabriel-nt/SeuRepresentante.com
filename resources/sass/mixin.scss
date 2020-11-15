@@ -1,0 +1,66 @@
+// Mixin 
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+    &:before {
+        display: block;
+        content: " ";
+        width: $full;
+        padding-top: ($height / $width) * $full;
+    }
+    >.aspect-ratio {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+@mixin material-shadow($color) {
+    -moz-box-shadow: 0 10px 30px -12px rgba($color, 0.28), 0 4px 25px 0px rgba($color, 0.12), 0 8px 10px -5px rgba($color, 0.2);
+    -webkit-box-shadow: 0 10px 30px -12px rgba($color, 0.28), 0 4px 25px 0px rgba($color, 0.12), 0 8px 10px -5px rgba($color, 0.2);
+    box-shadow: 0 10px 30px -12px rgba($color, 0.28), 0 4px 25px 0px rgba($color, 0.12), 0 8px 10px -5px rgba($color, 0.2);
+}
+
+@mixin select-shadow($color) {
+    //-moz-box-shadow: 0 10px 30px -12px rgba($color, 0.28), 0 4px 25px 0px rgba($color, 0.12), 0 8px 10px -5px rgba($color, 0.2);
+    //-webkit-box-shadow: 0 10px 30px -12px rgba($color, 0.28), 0 4px 25px 0px rgba($color, 0.12), 0 8px 10px -5px rgba($color, 0.2);
+    box-shadow: $box-shadow-card;
+}
+
+@function m-shadow($color) {
+    @return 0 10px 30px -12px rgba($color, 0.28),
+    0 4px 25px 0px rgba($color, 0.12),
+    0 8px 10px -5px rgba($color, 0.2);
+}
+
+@mixin inset-shadow() {
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+@mixin light-shadow($color: rgba(0, 0, 0, .10)) {
+    -moz-box-shadow: 0 1px 4px 0 $color;
+    -webkit-box-shadow: 0 1px 4px 0 $color;
+    box-shadow: 0 1px 4px 0 $color;
+}
+
+@mixin elevation($box-shadow: $box-shadow-card) {
+    -moz-box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+@mixin elevation-hover($box-shadow: $box-shadow-card-hover) {
+    -moz-box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+// Cross browser box shadow
+@mixin box-shadow($box-shadow) {
+    -moz-box-shadow: $box-shadow;
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}

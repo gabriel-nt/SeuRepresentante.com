@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+.alerts-session-svg {
+    fill: #fff;
+}
+
+.alerts-session {
+    text-align: left;
+    padding: 21px 0;
+    background-color: #fff;
+    border-radius: 4px;
+    max-width: 500px;
+    top: 0px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 1px 7px 14px 2px rgba(0, 0, 0, 0.2);
+}
+
+.alerts-session:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.alerts-session-icon {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    & .ic {
+        color: white;
+        padding: 9px;
+        font-size: 15px;
+    }
+    .fa-exclamation,
+    .fa-info {
+        color: white;
+        padding: 9px;
+        font-size: 15px;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+
+.alerts-session-type {
+    color: #3e3e3e;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.alerts-session-message {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #878787;
+}
+
+.alerts-session-content {
+    padding-left: 70px;
+    padding-right: 60px;
+}
+
+.alerts-session-close {
+    position: absolute;
+    right: 22px;
+    top: 45%;
+    width: 14px;
+    cursor: pointer;
+    height: 14px;
+    fill: #878787;
+    transform: translateY(-50%);
+}
+
+.alerts-session-green .alerts-session-icon {
+    background-color: #2BDE3F;
+}
+
+.alerts-session-green:before {
+    background-color: #2BDE3F;
+}
+
+.alerts-session-blue .alerts-session-icon {
+    background-color: #1D72F3;
+}
+
+.alerts-session-blue:before {
+    background-color: #1D72F3;
+}
+
+.alerts-session-yellow .alerts-session-icon {
+    background-color: #FFC007;
+}
+
+.alerts-session-yellow:before {
+    background-color: #FFC007;
+}
+
+.alerts-session-red .alerts-session-icon {
+    background-color: #ff3547;
+}
+
+.alerts-session-red:before {
+    background-color: #ff3547;
+}

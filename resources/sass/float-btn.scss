@@ -1,0 +1,151 @@
+// Dimensões
+$dimen-xxs: 1px;
+$dimen-xs: 3px;
+$dimen-sm: 5px;
+$dimen-md: 7.5px;
+$dimen-1x: 15px;
+$dimen-2x: 30px;
+$dimen-3x: 45px;
+$dimen-4x: 60px;
+$dimen-5x: 75px;
+$dimen-6x: 90px;
+$full: 100%;
+$half: 50%;
+// Botão float
+$float-btn-main-edit-transition: all ease-in-out 0.3s;
+$float-btn-right: $dimen-1x;
+$float-btn-bottom: $dimen-1x;
+$float-btn-width: $dimen-4x;
+$float-btn-height: $dimen-4x;
+$float-btn-zindex: 2;
+$float-btn-hover-height: 400px;
+$float-btn-hover-width: 90px;
+$float-btn-hover-padding: 30px;
+// Botões float pop-up
+$float-btn-popup-height: $dimen-3x !important;
+$float-btn-popup-width: $dimen-3x !important;
+$float-btn-popup-right: $dimen-md+$dimen-1x;
+$float-btn-popup-zindex: 3;
+// Botão float principal
+$float-btn-main-height: $dimen-4x;
+$float-btn-main-padding: 0 !important;
+$float-btn-main-text-color: white;
+$float-btn-main-icone: 20px;
+$float-btn-main-width: $dimen-4x;
+$float-btn-main-border-radius: 50%;
+$float-btn-main-bottom: $dimen-1x;
+$float-btn-main-right: $dimen-1x;
+$float-btn-main-letter-spacing: normal !important;
+// Container do botão float
+.btn-ft-ct {
+    position: absolute;
+    right: $float-btn-right;
+    bottom: $float-btn-bottom;
+    width: $float-btn-width;
+    height: $float-btn-height;
+    z-index: $float-btn-zindex;
+    &:hover {
+        height: $float-btn-hover-height;
+        width: $float-btn-hover-width;
+        padding: $float-btn-hover-padding;
+        .btn-ft-mn .ft-plus {
+            animation: ft-plus-in 0.15s linear;
+            animation-fill-mode: forwards;
+        }
+        .btn-ft-mn .ft-edit {
+            animation: ft-edit-in 0.2s;
+            animation-delay: 0.1s;
+            animation-fill-mode: forwards;
+        }
+        .btn-ft {
+            transform: scale(1);
+            animation: bounce-btn-ft 0.1s linear !important;
+            animation-fill-mode: forwards !important;
+            &:nth-child(3) {
+                animation-delay: 0.08s;
+            }
+            &:nth-child(4) {
+                animation-delay: 0.15s;
+            }
+            &:nth-child(5) {
+                animation-delay: 0.2s;
+            }
+            & i {
+                margin-top: 8px;
+            }
+        }
+    }
+    // Botão float
+    .btn-ft-mn {
+        box-shadow: 0 7px 14px rgba(0, 0, 0, .15), 0 5px 5px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        position: absolute;
+        padding: $float-btn-main-padding;
+        color: $float-btn-main-text-color;
+        height: $float-btn-main-height;
+        width: $float-btn-main-width;
+        border-radius: $float-btn-main-border-radius;
+        bottom: $float-btn-main-bottom;
+        right: $float-btn-main-right;
+        letter-spacing: $float-btn-main-letter-spacing;
+        >i {
+            margin: 0;
+            font-size: $float-btn-main-icone;
+        }
+        &:hover {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, .15), 0 10px 10px rgba(0, 0, 0, .1);
+        }
+        // Ícone do botão
+        .ft-plus {
+            transition: all ease-in-out .3s;
+            animation: ft-plus-out 0.3s;
+        }
+        // Ícone do botão no evento hover
+        .ft-edit {
+            transform: rotateZ(-70deg);
+            transition: $float-btn-main-edit-transition;
+            position: absolute;
+            display: block;
+            animation: ft-edit-out 0.3s;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            line-height: $dimen-4x;
+        }
+    }
+    // Botões pop-up
+    .btn-ft {
+        box-shadow: 0 7px 14px rgba(0, 0, 0, .15), 0 5px 5px rgba(0, 0, 0, .1);
+        border-radius: $half;
+        transform: scale(0);
+        cursor: pointer;
+        animation-fill-mode: forwards;
+        position: absolute;
+        height: $float-btn-popup-height;
+        width: $float-btn-popup-width;
+        right: $float-btn-popup-right;
+        z-index: $float-btn-popup-zindex;
+        &:nth-child(2) {
+            bottom: $dimen-6x;
+            animation-delay: 0.2s;
+            animation: bounce-out-btn-ft 0.3s linear;
+        }
+        &:nth-child(3) {
+            bottom: $dimen-6x + $dimen-4x;
+            animation-delay: 0.15s;
+            animation: bounce-out-btn-ft 0.15s linear;
+        }
+        &:nth-child(4) {
+            bottom: $dimen-6x + $dimen-4x + $dimen-4x;
+            animation-delay: 0.1s;
+            animation: bounce-out-btn-ft 0.1s linear;
+        }
+        &:nth-child(5) {
+            bottom: $dimen-6x * 3;
+            animation-delay: 0.08s;
+            animation: bounce-out-btn-ft 0.1s linear;
+        }
+    }
+}

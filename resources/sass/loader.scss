@@ -1,0 +1,24 @@
+.loader {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .8) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
+}
+
+
+/* enquanto estiver carregando, o scroll da página estará desativado */
+
+body.loading {
+    overflow: hidden;
+}
+
+
+/* a partir do momento em que o body estiver com a classe loading,  o modal aparecerá */
+
+body.loading .loader {
+    display: block;
+}

@@ -1,0 +1,21 @@
+.card {
+    border: none !important;
+}
+
+.cl-pr {
+    color: #a8cf45;
+}
+
+.cl-blue {
+    color: #4285f4;
+}
+
+.card {
+    .card-header {
+        cursor: pointer;
+        &:hover {
+            transition: .5s all;
+            background: #ddd;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+/* Estrutura */
+
+.input-container {
+    position: relative;
+    input,
+    textarea {
+        border: 0;
+        border-bottom: 1px solid #9e9e9e;
+        outline: none;
+        box-sizing: border-box;
+    }
+    textarea {
+        padding-top: 14px;
+    }
+    label {
+        font-weight: normal !important;
+        top: 0px;
+        left: 0;
+        right: 0;
+        color: #616161;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        font-size: 1rem;
+        cursor: text;
+        transition: .2s ease-in-out;
+        box-sizing: border-box;
+    }
+    .validation {
+        color: red;
+        font-size: 14px;
+    }
+    input,
+    label {
+        width: 100%;
+        height: 3rem;
+        font-size: 1rem;
+    }
+    textarea {
+        width: 100%;
+        min-height: 50px;
+        font-size: 1rem;
+    }
+    .is-active-label {
+        font-size: .8rem;
+        top: -25px;
+    }
+    .is-active-tx {
+        font-size: .8rem;
+        top: -35px;
+    }
+    .is-active {
+        border-bottom: 2px solid #a8cf45;
+    }
+    .is-active-search {
+        border-bottom: 2px solid #4285f4;
+    }
+}
+
+.is-invalid {
+    >input,
+    textarea {
+        border-bottom: 2px solid red;
+    }
+    >label {
+        color: red;
+    }
+}
+
+.buttons {
+    margin-top: 10px;
+}

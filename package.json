@@ -1,0 +1,35 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.19.0",
+        "bootstrap": "^4.3.1",
+        "cropper": "^4.0.0",
+        "cross-env": "^5.1",
+        "grunt": "^1.0.4",
+        "grunt-contrib-concat": "^1.0.1",
+        "grunt-contrib-cssmin": "^3.0.0",
+        "grunt-contrib-sass": "^1.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "inputmask": "^4.0.9",
+        "jquery": "^3.4.1",
+        "jquery-ui": "^1.12.1",
+        "laravel-mix": "^4.0.7",
+        "lodash": "^4.17.13",
+        "overlayscrollbars": "^1.9.1",
+        "popper.js": "^1.15.0",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.15.2",
+        "sass-loader": "^7.1.0",
+        "swiper": "^5.0.4",
+        "vue": "^2.5.17"
+    }
+}
