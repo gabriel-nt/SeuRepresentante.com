@@ -41,7 +41,8 @@
 - [x] Envio de Emails
 
 ### ✅ Demonstração
-<img src="https://github.com/Gabriel-Teixeira/Blog/blob/master/public/img/news.PNG" alt="news" />
+<img src="https://github.com/gabriel-nt/SeuRepresentante.com/blob/master/public/img/home.PNG" alt="Home" />
+<img src="https://github.com/gabriel-nt/SeuRepresentante.com/blob/master/public/img/register.PNG" alt="Home" />
 
 ### ⚙ Pré-requisitos
 
