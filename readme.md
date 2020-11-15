@@ -9,7 +9,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/laravel%20version-5.8.*-important"/>
   <img src="https://img.shields.io/badge/php%20version-7.1.3-informational" />
-  <img src="https://img.shields.io/badge/last%20commit-september-yellow" />
+  <img src="https://img.shields.io/badge/last%20commit-november-yellow" />
   <img src="https://img.shields.io/badge/license-MIT-success"/>
 </p>
 
